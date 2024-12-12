@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9e6c0; /* Light beige background */
+      margin: 0;
+      padding: 0;
+    }
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full screen height */
+      padding: 20px;
+    }
+    .profile-card {
+      display: flex;
+      align-items: center;
+      background-color: transparent; /* No white box, fully transparent */
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 1000px;
+      width: 90%;
+    }
+    .profile-card img {
+      width: 300px; /* Fixed width for the image */
+      height: auto;
+      border-radius: 4px;
+      margin-right: 20px;
+      border: 2px solid #ccc;
+    }
+    .content {
+      flex: 1;
+    }
+    .content h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #000;
+    }
+    .content p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      text-align: justify;
+      color: #333;
+      font-weight: bold; /* Make paragraphs bold */
+    }
+    .details {
+      font-size: 14px;
+      margin-top: 20px;
+      color: #000; /* Matches the text color to background */
+    }
+    .details span {
+      font-weight: bold;
+      margin-right: 10px;
+      display: inline-block;
+      min-width: 80px;
+    }
+    .line {
+      height: 1px;
+      background-color: #ccc;
+      margin: 10px 0;
+    }
+    .download-btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: green; /* Bootstrap blue color */
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .download-btn:hover {
+      background-color: #0056b3; /* Darker blue for hover */
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MyWebsite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="skill.html">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="study.html">Study</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">Project</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <div class="about-container">
+    <div class="profile-card">
+      <img src="/preesha.jpg" alt="Profile Picture">
+      <div class="content">
+        <h1>ABOUT ME</h1>
+        <p>
+          I am a passionate web developer with expertise in creating responsive and user-friendly websites. My skill set includes front-end technologies like HTML, CSS, Bootstrap, and JavaScript, as well as back-end tools like Python and SQL. I focus on clean, efficient code and strive to deliver seamless user experiences. My journey in web development is driven by continuous learning and adapting to modern technologies. I aim to craft innovative solutions that meet user needs and business goals.
+        </p>
+        <p>
+          My academic background in Computer Science and hands-on project experience have honed my problem-solving and creative thinking skills. I am a quick learner, adaptable to new technologies, and thrive in both individual and team environments.
+        </p>
+        <div class="line"></div>
+        <div class="details">
+          <p><span>NAME:</span> Arockiya Kanishka Preesha</p>
+          <p><span>AGE:</span> 23 Years</p>
+          <p><span>EMAIL:</span> kanishkapreesha.in@gmail.com</p>
+          <p><span>LOCATION:</span> Kanniyakumari</p>
+        </div>
+      </div>
+    </div>
+    <!-- Download Resume Button -->
+    <a href="https://online.flippingbook.com/view/527047204/" class="download-btn" download>Download Resume</a>
+  </div>
+        
+</body>
+</html>

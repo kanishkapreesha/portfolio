@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.header {
+    text-align: center;
+    background-color: plum; /* Dark Gray */
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.header h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/* Product Image Section */
+.product-image {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-image .image-container img {
+    max-width: 50%;
+    border-radius: 8px;
+}
+
+.product-image .product-details {
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-image .product-details h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.product-image .product-details p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.product-image .btn {
+    padding: 10px 20px;
+    background-color: #0071e3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.product-image .btn:hover {
+    background-color: #005bb5;
+}
+
+/* Quality Section */
+.quality-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.quality-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.quality-features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.quality-feature {
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quality-feature img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.quality-feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.quality-feature p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+        .order-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2874f0; /* Flipkart Blue */
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-btn:hover {
+            background-color: #005cbf; /* Darker Blue on Hover */
+        }
+    
+</style>
+</head>
+<body>
+    <header class="header">
+        <h1>iPhone 15 Pro Showcase</h1>
+    </header>
+
+    <!-- Product Image Section -->
+    <section class="product-image">
+        <div class="image-container">
+            <img src="/app.jpg" alt="iPhone 15 Pro">
+        </div>
+        <div class="product-details">
+            <h2>iPhone 15 Pro</h2>
+            <p>The ultimate smartphone experience with advanced technology, sleek design, and unmatched performance.</p>
+            <a href="https://www.flipkart.com" target="_blank" class="order-btn">Order on Flipkart</a>
+        </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section class="quality-section">
+        <h2>Why iPhone 15 Pro?</h2>
+        <div class="quality-features">
+            <div class="quality-feature">
+                <img src="/cemera.jpg" alt="Camera">
+                <h3>Advanced Camera</h3>
+                <p>The iPhone 15 Pro camera delivers stunning clarity with its 48MP main lens and advanced Night Mode.
+                    Capture breathtaking close-ups with 5x optical zoom and ultra-wide landscapes with a 120-degree field of view.
+                    Shoot professional-grade videos using Cinematic Mode and Action Mode for smooth, dynamic results</p>
+            </div>
+            <div class="quality-feature">
+                <img src="/color.jpg" alt="Performance">
+                <h3>Powerful Performance</h3>
+                <p>The iPhone 15 Pro is powered by the cutting-edge A17 Pro chip, delivering lightning-fast performance and efficiency.
+                    Seamlessly handle multitasking, gaming, and professional-grade apps with unparalleled speed and responsiveness.
+                    Advanced GPU and AI capabilities redefine mobile computing, making every task smoother and smarter.</p>
+            </div>
+            <div class="quality-feature">
+                <img src="/desing.jpg" alt="Design">
+                <h3>Elegant Design</h3>
+                <p>The iPhone 15 Pro features a sleek, lightweight titanium body, offering both elegance and durability.
+                    Its edge-to-edge Super Retina XDR display ensures stunning visuals with vibrant colors and sharp details.
+                    Thoughtfully crafted with precision, it combines beauty and functionality for a premium, modern look.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Apple Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

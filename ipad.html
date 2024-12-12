@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPad Showcase</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f9fafc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            background-color: plum; /* Navy Blue */
+            color: white;
+            padding: 30px 0;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .section h2 {
+            text-align: center;
+            color: #1d3557;
+            font-size: 2.4rem;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 40px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            flex: 1 1 50%;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+
+        .product-image img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .product-details {
+            flex: 1 1 50%;
+            padding: 30px;
+        }
+
+        .product-details h3 {
+            font-size: 2rem;
+            color: #1d3557;
+            margin-bottom: 15px;
+        }
+
+        .product-details p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .order-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #457b9d;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .order-btn:hover {
+            background-color: #1d3557;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-section {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .video-section video {
+            max-width: 90%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>iPad Showcase</h1>
+    </header>
+
+    <!-- Product Section -->
+    <div class="section">
+        <h2>Explore the iPad Collection</h2>
+
+        <!-- Product 1 -->
+        <div class="product">
+            <div class="product-image">
+                <img src="/ipad.jpg" alt="iPad Pro">
+            </div>
+            <div class="product-details">
+                <h3>iPad Pro</h3>
+                <p>Experience the pinnacle of performance with the M2 chip, Liquid Retina XDR display, and enhanced multitasking capabilities.</p>
+                <a href="https://www.flipkart.com" target="_blank" class="order-btn">Order on Flipkart</a>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <div class="product-image">
+                <img src="/last.jpg" alt="iPad Air">
+            </div>
+            <div class="product-details">
+                <h3>iPad Air</h3>
+                <p>The iPad Air combines power and portability with the M1 chip, a stunning display, and all-day battery life for work and play.</p>
+                <a href="https://www.flipkart.com" target="_blank" class="order-btn">Order on Flipkart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+   
+</body>
+</html>
+
+
+       
+               

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Contact Section */
+.contact-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #00796b;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.contact-details {
+    flex: 1;
+    background: #e0f2f1;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h3 {
+    color: #00796b;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-details li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.contact-details a {
+    color: #00796b;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    flex: 1;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    color: #00796b;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #00796b;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #00796b;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #004d40;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details, .contact-form {
+        flex: 1 1 100%;
+        margin-bottom: 2rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-details h3, .contact-form h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-details p,
+    .contact-details li {
+        font-size: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+    }
+}
+
+</style>
+          
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MyWebsite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="skill.html">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="study.html">Study</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">Project</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <div class="contact-details">
+                <h3>Get in Touch</h3>
+                <p>If you have any questions or would like to discuss potential opportunities, feel free to reach out to me!</p>
+                <ul>
+                    <li><strong>Email:</strong> kanishkapreesha.in@gmail.com</li>
+                    <li><strong>Phone:</strong> +91 9342205303</li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kanishka-preesha-198b7429b" target="_blank">LinkedIn Profile</a></li>
+                    
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h3>Send Me a Message</h3>
+                <form action="mailto:kanishkapreesha@example.com" method="post" enctype="text/plain">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
