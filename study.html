@@ -177,7 +177,13 @@ margin-top: 2rem;
 <footer>
   
     <div class="container">
-        <p>&copy; 2024 Arockiya Kanishka Preesha</p>
+      <p>&copy; <span id="year"></span> Arockiya Kanishka Preesha</p>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+
     </div>
 </footer>
 </body>
