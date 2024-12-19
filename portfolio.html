@@ -19,43 +19,45 @@
       align-items: center;
       height: 100vh; /* Full screen height */
       padding: 20px;
+      padding-top: 120px; /* Increased space between navbar and image */
     }
-    .profile-card {
+    .profile-section {
       display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      background-color: transparent; /* No white box, fully transparent */
-      padding: 20px;
-      border-radius: 8px;
-      max-width: 1000px;
-      width: 90%;
+      max-width: 800px;
+      width: 100%;
     }
-    .profile-card img {
-      width: 300px; /* Fixed width for the image */
-      height: auto;
-      border-radius: 4px;
-      margin-right: 20px;
-      border: 2px solid #ccc;
+    .profile-section img {
+      width: 250px; /* Fixed width for the image */
+      height: 250px; /* Fixed height */
+      border-radius: 50%; /* Circular image */
+      margin-bottom: 20px; /* Space between image and content */
+      border: 3px solid #ccc; /* Border around the image */
     }
     .content {
-      flex: 1;
+      text-align: center;
+      margin-bottom: 20px;
     }
     .content h1 {
       font-size: 28px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       color: #000;
     }
     .content p {
       font-size: 16px;
       line-height: 1.6;
-      margin-bottom: 20px;
-      text-align: justify;
+      margin-bottom: 15px;
       color: #333;
-      font-weight: bold; /* Make paragraphs bold */
+      font-weight: bold;
     }
     .details {
       font-size: 14px;
-      margin-top: 20px;
-      color: #000; /* Matches the text color to background */
+      margin-top: 10px;
+      color: #000;
+      text-align: left;
+      width: 100%;
     }
     .details span {
       font-weight: bold;
@@ -66,7 +68,7 @@
     .line {
       height: 1px;
       background-color: #ccc;
-      margin: 10px 0;
+      margin: 15px 0;
     }
     .download-btn {
       margin-top: 20px;
@@ -75,17 +77,18 @@
       font-size: 16px;
       font-weight: bold;
       color: #fff;
-      background-color: green; /* Bootstrap blue color */
+      background-color: green; 
       text-decoration: none;
       border-radius: 5px;
       transition: background-color 0.3s ease;
     }
     .download-btn:hover {
-      background-color: #0056b3; /* Darker blue for hover */
+      background-color: #0056b3; 
     }
   </style>
 </head>
 <body>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">MyWebsite</a>
@@ -113,12 +116,9 @@
       </div>
     </div>
   </nav>
-  
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
   <div class="about-container">
-    <div class="profile-card">
+    <div class="profile-section">
       <img src="kani.jpg" alt="Profile Picture">
       <div class="content">
         <h1>ABOUT ME</h1>
@@ -128,18 +128,22 @@
         <p>
           My academic background in Computer Science and hands-on project experience have honed my problem-solving and creative thinking skills. I am a quick learner, adaptable to new technologies, and thrive in both individual and team environments.
         </p>
-        <div class="line"></div>
-        <div class="details">
-          <p><span>NAME:</span> Arockiya Kanishka Preesha</p>
-          <p><span>AGE:</span> 23 Years</p>
-          <p><span>EMAIL:</span> kanishkapreesha.in@gmail.com</p>
-          <p><span>LOCATION:</span> Kanniyakumari</p>
-        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="details">
+        <p><span>NAME:</span> Arockiya Kanishka Preesha</p>
+        <p><span>AGE:</span> 23 Years</p>
+        <p><span>EMAIL:</span> kanishkapreesha.in@gmail.com</p>
+        <p><span>LOCATION:</span> Kanniyakumari</p>
       </div>
     </div>
+
     <!-- Download Resume Button -->
     <a href="https://online.flippingbook.com/view/527047204/" class="download-btn" download>Download Resume</a>
   </div>
-        
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
