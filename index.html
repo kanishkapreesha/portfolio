@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('your-image.jpg') no-repeat center center fixed; /* Replace 'your-image.jpg' with your image path */
+            background-size: cover;
+            color: white;
+        }
+
+        /* Background Overlay */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
+            z-index: -1;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: rgba(30, 58, 138, 0.7); /* Semi-transparent deep blue */
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .header p {
+            font-size: 1.3rem;
+            margin: 0;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 50px 20px;
+            color: white; /* Text color for contrast */
+        }
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        .project-card {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the cards */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* About Me Section - New Color and Style */
+        .about-me {
+            background-color: #f97316; /* Vibrant orange color */
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .about-me:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .about-me h5 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .about-me p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        .about-me .btn-primary {
+            background-color: #1e3a8a; /* Matching button color */
+            border: none;
+            color: white;
+            border-radius: 50px;
+            padding: 12px 25px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        .about-me .btn-primary:hover {
+            background-color: #334155; /* Darker blue on hover */
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #1e3a8a;
+            color: #bbb;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+            margin-top: 50px;
+        }
+        .footer a {
+            color: #f97316; /* Bright orange link */
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #ff4f1f;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Welcome to My Project Portfolio</h1>
+        <p>Explore my projects and their details</p>
+    </header>
+
+    
+
+    <!-- About Me Section -->
+    <section class="about-me container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h5 class="card-title">About Me</h5>
+                <p class="card-text">I have added my personal details, skills, educational background, and projects here. You can view them by clicking on the button below.</p>
+                <a href="portfolio.html" target="_blank" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Arockiya Kanishka Preesha. Built with ❤️ and hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
